@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+import { FiCornerDownLeft } from 'react-icons/fi'
 import { mask, unMask } from "remask";
 import api from "../../api";
 import "./styles.css";
@@ -44,7 +45,7 @@ export default function Cadastro() {
             </head>
             <body>
                 <h1>Base Lead</h1>
-                <form onSubmit={insertLead}>
+                <form className="formContainer" onSubmit={insertLead}>
                     <div className="inputContainer">
                         <input
                             type="text"
@@ -184,9 +185,12 @@ export default function Cadastro() {
                         </select>
                     </div>
                     <div className="ButtonArea">
-                        <button type="button" onClick={() => { navigate("/") }}>Home</button>
                         <button type="button" onClick={() => { clearFields() }}>Limpar</button>
                         <button type="submit">Enviar</button>
+                    </div>
+                    <div className="areareturn">
+                        <FiCornerDownLeft className="Iconapp" size={16} color={"rgb(231, 6, 51"} />
+                        <Link to={"/"} style={{ color: "rgb(231, 6, 51)" }}>Retornar</Link>
                     </div>
                 </form>
             </body>

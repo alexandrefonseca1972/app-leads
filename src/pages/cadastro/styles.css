@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    background: #cecbdb;
+
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body {
+    font: 400 14px Poppins, sans-serif;
+    background: #cecbdb;
+    -webkit-font-smoothing: antialiased;
 }
 
 input,
 select {
     border: 3px;
-    font-size: 16px;
+    font: 400 18px Poppins, sans-serif;
     padding: 3px;
     font-weight: bold;
     border: 1px solid;
@@ -24,20 +25,48 @@ select {
     color: #10035b;
 }
 
+.container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 30px;
+}
+
+
+
+input::placeholder {
+    color: #1a0f95;
+}
+
 .inputContainer input {
     margin-top: 7px;
-    width: 30vh
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
 }
 
 .inputRadio {
     display: flex;
     margin-top: 7px;
+    font: 400 16px Poppins, sans-serif;
+    font-weight: bold;
     margin-bottom: 7px;
     padding: 5px;
-    width: 260px;
+    width: 220px;
     align-items: center;
     justify-content: space-around;
 }
+
 
 .selectcurso {
     margin-top: 7px;
@@ -52,22 +81,48 @@ select {
 .ButtonArea {
     display: flex;
     flex-direction: row;
-    width: 30vh;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
 }
 
 .ButtonArea button {
     padding: 5px;
-    margin: 10px;
-    width: 80px;
-    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    width: 120px;
+    border: 0;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
     color: rgb(7, 7, 7);
+    font-size: 18px;
+    line-height: 30px;
+    transition: filter 0, 2s;
 
 }
 
 .ButtonArea button:hover {
-    color: rgb(79, 147, 163);
+    filter: brightness(90%);
+}
+
+.areareturn {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: opacity 0.2s;
+}
+
+.Iconapp {
+    margin-right: 8px;
+}
+
+.areareturn:hover {
+
+    opacity: 0.8;
 }
