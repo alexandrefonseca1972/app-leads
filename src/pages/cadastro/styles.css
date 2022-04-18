@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+input,
+select {
+    border: 3px;
+    font-size: 14px;
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.inputContainer {
+    margin-top: 7px;
+}
+
+.inputRadio {
+    display: flex;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.selectcurso {
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.textboxcurso {
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
