@@ -12,6 +12,11 @@ select {
     padding: 3px;
     border: 1px solid;
     border-radius: 5px;
+    color: #10035b;
+}
+
+h1 {
+    color: #10035b;
 }
 
 .inputContainer {
