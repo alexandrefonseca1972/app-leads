@@ -3,30 +3,40 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    background: #cecbdb;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 input,
 select {
     border: 3px;
-    font-size: 14px;
+    font-size: 16px;
     padding: 3px;
+    font-weight: bold;
     border: 1px solid;
     border-radius: 5px;
     color: #10035b;
 }
 
-h1 {
-    color: #10035b;
-}
-
-.inputContainer {
+.inputContainer input {
     margin-top: 7px;
+    width: 30vh
 }
 
 .inputRadio {
     display: flex;
     margin-top: 7px;
     margin-bottom: 7px;
+    padding: 5px;
+    width: 260px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .selectcurso {
@@ -37,4 +47,27 @@ h1 {
 .textboxcurso {
     margin-top: 7px;
     margin-bottom: 10px;
+}
+
+.ButtonArea {
+    display: flex;
+    flex-direction: row;
+    width: 30vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ButtonArea button {
+    padding: 5px;
+    margin: 10px;
+    width: 80px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(7, 7, 7);
+
+}
+
+.ButtonArea button:hover {
+    color: rgb(79, 147, 163);
 }
