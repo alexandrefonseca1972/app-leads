@@ -40,7 +40,7 @@ export default function Cadastro() {
     return (
         <div className="container">
             <head>
-                <title style={{ color: "#948853" }}>Cadastro de Leads</title>
+                <title >Cadastro de Leads</title>
             </head>
             <body>
                 <h1>Base Lead</h1>
